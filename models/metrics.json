@@ -1,0 +1,58 @@
+{
+  "best_model": "gradient_boost",
+  "models": {
+    "random_forest": {
+      "rmse": 0.0293,
+      "mae": 0.0192,
+      "r2": -0.1818
+    },
+    "gradient_boost": {
+      "rmse": 0.0253,
+      "mae": 0.016,
+      "r2": -0.1818
+    },
+    "ridge": {
+      "rmse": 0.0676,
+      "mae": 0.0471,
+      "r2": -0.1818
+    }
+  },
+  "feature_cols": [
+    "aqi",
+    "co",
+    "no2",
+    "o3",
+    "pm2_5",
+    "pm10",
+    "so2",
+    "hour",
+    "day",
+    "month",
+    "day_of_week",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "dow_sin",
+    "dow_cos",
+    "pm25_lag_1",
+    "pm25_lag_3",
+    "pm25_lag_6",
+    "pm25_rolling_mean_3",
+    "pm25_rolling_mean_6",
+    "pm25_rolling_std_3",
+    "pm25_rolling_std_6",
+    "pm25_rolling_min_6",
+    "pm25_rolling_max_6",
+    "pm25_change",
+    "pm25_change_pct",
+    "pm25_accel",
+    "pollutant_composite",
+    "pm25_x_hour",
+    "pm25_x_weekend",
+    "no2_o3_ratio"
+  ],
+  "data_rows": 69,
+  "target_std": 0.0547
+}
