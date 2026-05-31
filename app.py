@@ -24,7 +24,7 @@ from datetime import datetime
 # ── Must be first Streamlit call ───────────────────────────────────────────────
 st.set_page_config(
     page_title="AQI Forecast · Karachi",
-    page_icon="🌬️",
+    page_icon="☁️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -354,7 +354,7 @@ def predict_72h(df: pd.DataFrame, model) -> list[dict]:
 with st.sidebar:
     st.markdown("""
     <div style='padding:16px 0 8px 0'>
-      <div style='font-size:20px;font-weight:700;color:#818cf8;letter-spacing:-0.02em'>🌬️ AQI Forecast</div>
+      <div style='font-size:20px;font-weight:700;color:#818cf8;letter-spacing:-0.02em'>☁️ AQI Forecast</div>
       <div style='font-size:12px;color:#6b7299;margin-top:4px'>Powered by Random Forest ML</div>
     </div>
     """, unsafe_allow_html=True)
